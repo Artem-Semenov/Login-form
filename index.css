@@ -145,6 +145,7 @@ margin-bottom: 113px;
 }
 .login-wrapper {
 	margin-top: 45px;
+	
 }
 .login-wrapper input {
 	width: 270px;
@@ -155,13 +156,19 @@ margin-bottom: 113px;
 	font-weight: 400;
 	font-size: 20px;
 	line-height: 23px;
+	
+}
+.input-focus-border {
+	border: 3px solid #969696;
 }
 .password-wrapper {
 	margin-top: 40px;
+	position: relative;
 }
 .password-wrapper input {
 	width: 270px;
 	height: 55px;
+
 	box-shadow: inset 4px 4px 4px rgba(0, 0, 0, 0.25);
 	border-radius: 10px;
 	padding-left: 15px;
@@ -169,6 +176,20 @@ margin-bottom: 113px;
 	font-size: 20px;
 	line-height: 23px;
 }
+.passwordIcon {
+ width: 30px;
+  height: 30px;
+  position: absolute;
+  top: 13px;
+  right: 65px;
+  background: url(/Login-form/source/img/password.png) right no-repeat;
+}
+
+.passwordIconActive{
+  background: url(/Login-form/source/img/password\ show.png) right no-repeat;
+}
+
+
 
 .login-wrapper input ::placeholder{
    color: red;
@@ -194,11 +215,9 @@ background: #124b95;
 
 .button-hover{
    background: #597395;
+	cursor: default;
 }
-.button-hover:hover {
-   cursor: default;
 
-}
 
 /* .focus-border{
    border: 3px solid #969696;
@@ -215,12 +234,8 @@ font-weight: 400;
 font-size: 14px;
 line-height: 16px;
 text-align: center;
-
 color: #555555;
 }
-
-
-
 
 
 
