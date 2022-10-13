@@ -110,14 +110,13 @@
 						if (
 							el.isFullyMatch(loginInput.value, passwordInput.value) === true
 						) {
-							console.log("login successfu!");
 							successfullLogin.classList.add(
 								"successfullLogin-wrapper-display"
 							);
 							mainForm.parentElement.classList.add("form-wrapper-display-none");
 							return;
 						} else if (el.isLoginMatch(loginInput.value) === true) {
-							console.log("login is correct but password is not");
+							passwordInput.classList.add("input_error");
 							if (!passwordShow.nextElementSibling) {
 								passwordInput.parentElement.insertAdjacentHTML(
 									"beforeend",
@@ -131,7 +130,6 @@
 							}
 							return;
 						} else {
-							console.log("here is no such user");
 							if (!loginInput.nextElementSibling) {
 								loginInput.parentElement.insertAdjacentHTML(
 									"beforeend",
@@ -228,6 +226,7 @@
                   </div>`
 					);
 				} else if (!emailTest(loginInput)) {
+					loginInput.classList.add("input_error")
 					if (!loginInput.nextElementSibling) {
 						loginInput.parentElement.insertAdjacentHTML(
 							"beforeend",
