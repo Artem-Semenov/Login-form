@@ -131,6 +131,7 @@
 							return;
 						} else {
 							if (!loginInput.nextElementSibling) {
+								loginInput.classList.add("input_error")
 								loginInput.parentElement.insertAdjacentHTML(
 									"beforeend",
 									`<div class="login-error-missing">
