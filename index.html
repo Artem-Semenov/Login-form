@@ -116,6 +116,7 @@
 							mainForm.parentElement.classList.add("form-wrapper-display-none");
 							return;
 						} else if (el.isLoginMatch(loginInput.value) === true) {
+							loginInput.classList.remove("input_error")
 							passwordInput.classList.add("input_error");
 							if (!passwordShow.nextElementSibling) {
 								passwordInput.parentElement.insertAdjacentHTML(
