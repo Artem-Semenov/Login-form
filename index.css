@@ -182,11 +182,11 @@ margin-bottom: 113px;
   position: absolute;
   top: 13px;
   right: 65px;
-  background: url(/Login-form/source/img/password.png) right no-repeat;
+  background: url(/source/img/password.png) right no-repeat;
 }
 
 .passwordIconActive{
-  background: url(/Login-form/source/img/password\ show.png) right no-repeat;
+  background: url(/source/img/password\ show.png) right no-repeat;
 }
 
 
@@ -212,17 +212,12 @@ background: #124b95;
 	color: #ffffff;
 }
 
-
-.button-hover{
-   background: #597395;
+ .submit-button:disabled {
+	background: #597395;
 	cursor: default;
-}
+} 
 
 
-/* .focus-border{
-   border: 3px solid #969696;
-  
-} */
 
 
 
@@ -236,8 +231,6 @@ line-height: 16px;
 text-align: center;
 color: #555555;
 }
-
-
 
 
 
