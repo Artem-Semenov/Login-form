@@ -184,11 +184,11 @@ margin-bottom: 113px;
   position: absolute;
   top: 13px;
   right: 65px;
-  background: url(/source/img/password.png) right no-repeat;
+  background: url(source/img/password.png) right no-repeat;
 }
 
 .passwordIconActive{
-  background: url(/source/img/password\ show.png) right no-repeat;
+  background: url(source/img/password\ show.png) right no-repeat;
 }
 
 
